@@ -44,6 +44,8 @@ html {
   color: white;
   box-shadow: inset 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
   font-family: "Raleway", sans-serif;
+  max-width: 100% !important;
+  height: auto !important;
 }
 
 .hero2 {
@@ -54,6 +56,8 @@ html {
   color: white;
   box-shadow: inset 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
   font-family: "Raleway", sans-serif;
+  max-width: 100% !important;
+  height: auto !important;
 }
 
 .hero .title {
@@ -85,6 +89,10 @@ html {
 @media (max-width: 599px) {
   .hero .hero-foot {
     display: none;
+  }
+  .hero {
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
 
@@ -498,12 +506,20 @@ html {
   .fh5co-cover .display-tc h1 {
     font-size: 40px;
   }
+  .hero {
+    max-width: 100% !important;
+    height: auto !important;
+  }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
     font-size: 70px;
+  }
+  .hero {
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
 #fh5co-header .display-tc h2,
