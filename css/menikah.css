@@ -38,14 +38,20 @@ html {
 
 .hero {
   /* background-image: url(https://picsum.photos/id/25/1920/1080); */
-  background: linear-gradient(rgb(247 146 143 / 32%), #2e3f5b00), rgb(61 76 90) url(../image/kakak.jpg) no-repeat;
-  background-attachment: fixed;
+  /* background: linear-gradient(rgb(247 146 143 / 32%), #2e3f5b00), rgb(61 76 90) url(../image/kakak.jpg) no-repeat; */
+  /* background-attachment: fixed;
   background-size: cover;
   color: white;
   box-shadow: inset 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
   font-family: "Raleway", sans-serif;
   max-width: 100% !important;
   height: auto !important;
+  min-height: 60vh !important; */
+  background-size: cover;
+  min-height: 60vh;
+  position: relative;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .hero2 {
@@ -91,7 +97,7 @@ html {
     display: none;
   }
   .hero {
-    max-width: 100% !important;
+    max-width: 200px !important;
     height: auto !important;
   }
 }
@@ -855,4 +861,19 @@ body.preloader-site {
 
   top: 50%;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .hero {
+    min-height: 30vh;
+  }
+}
+@media (max-width: 358px) {
+  .hero {
+    min-height: 30vh;
+  }
+}
+@media (min-width: 300px) and (max-width: 360px) {
+  .hero {
+    max-height: 30vh;
+  }
 }
