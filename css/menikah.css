@@ -47,6 +47,7 @@ html {
   max-width: 100% !important;
   height: auto !important;
   min-height: 60vh !important;
+  object-fit: contain;
   /* background-size: cover;
   min-height: 60vh;
   position: relative;
@@ -880,6 +881,8 @@ body.preloader-site {
 @media screen and (min-width: 300px) and (max-width: 1100px) {
   .hero {
     background-size: 50vh;
+    max-width: 100%;
+    height: auto;
     background-position-x: center;
     background-repeat: no-repeat;
     object-fit: contain;
