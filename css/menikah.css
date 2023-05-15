@@ -38,7 +38,7 @@ html {
 
 .hero {
   /* background-image: url(https://picsum.photos/id/25/1920/1080); */
-  background: linear-gradient(rgb(0 0 0 / 28%), #e2ccd02e), rgb(61 76 90) url(../image/back.JPG) no-repeat;
+  background: linear-gradient(rgb(0 0 0 / 28%), #996e6d), #d8a9a8 url(../image/back.JPG) no-repeat;
   /* background-image: url(image/hero.JPG); */
   background-attachment: fixed;
   background-size: cover;
@@ -58,7 +58,7 @@ html {
 
 .hero2 {
   /* background-image: url(https://picsum.photos/id/25/1920/1080); */
-  background: linear-gradient(rgb(0 0 0 / 28%), #e2ccd02e), rgb(61 76 90) url(../image/rame.jpg) no-repeat;
+  background: linear-gradient(rgb(0 0 0 / 28%), #e2ccd02e), rgb(61 76 90) url(../image/bawah.JPG) no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -748,7 +748,7 @@ body.preloader-site {
 }
 
 .foto3 {
-  background-image: url("../image/3.jpeg");
+  background-image: url("../image/3.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -756,7 +756,7 @@ body.preloader-site {
 }
 
 .foto4 {
-  background-image: url("../image/baru8.jpg");
+  background-image: url("../image/8.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -772,7 +772,7 @@ body.preloader-site {
 }
 
 .foto6 {
-  background-image: url("../image/6.jpeg");
+  background-image: url("../image/6.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -780,7 +780,7 @@ body.preloader-site {
 }
 
 .foto7 {
-  background-image: url("../image/baru6.jpg");
+  background-image: url("../image/4.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -788,7 +788,7 @@ body.preloader-site {
 }
 
 .foto8 {
-  background-image: url("../image/5.jpeg");
+  background-image: url("../image/5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -888,6 +888,18 @@ body.preloader-site {
     background-repeat: no-repeat;
     object-fit: contain;
   }
+  .hero2 {
+    background-size: 90vh;
+    max-width: 70%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+  }
+  .tile {
+    /* width: 50%; */
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -900,4 +912,60 @@ body.preloader-site {
   body {
     overflow-x: hidden;
   }
+}
+
+/* audio {
+  display: none;
+} */
+#myBtn {
+  margin-top: -70px;
+}
+svg {
+  height: 50px;
+  width: 80px;
+  cursor: pointer;
+}
+svg:hover {
+  background-color: yellow;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  display: ;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.amplop {
+  font-size: 1 rem;
 }
