@@ -358,10 +358,13 @@ html {
 .nama-lengkap {
   font-family: "Rouge Script", sans-serif;
   color: #996e6d;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   letter-spacing: 0px;
   padding-bottom: 6px;
   line-height: 3.7rem;
+}
+.nama-orangtua {
+  font-size: 1.5rem;
 }
 
 .ampersand {
@@ -543,6 +546,12 @@ html {
   .fh5co-cover .display-tc h2 {
     font-size: 16px;
   }
+  .nama-lengkap {
+    font-size: 15px;
+  }
+  .nama-orangtua {
+    font-size: 13px;
+  }
 }
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
@@ -644,6 +653,7 @@ body.preloader-site {
   border-bottom: 1px solid #6cc751;
   align-items: center;
   margin: 1rem;
+  text-decoration: none;
 }
 
 .btn-cta:hover {
@@ -734,16 +744,16 @@ body.preloader-site {
 .foto1 {
   background-image: url("../image/1.jpg");
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-position: center;
+  background-repeat: no-repeat; */
   min-height: 24rem;
 }
 
 .foto2 {
   background-image: url("../image/2.jpg");
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-position: center;
+  background-repeat: no-repeat; */
   min-height: 24rem;
 }
 
@@ -895,11 +905,6 @@ body.preloader-site {
     background-repeat: no-repeat;
     object-fit: contain;
   }
-  .tile {
-    /* width: 50%; */
-    display: grid;
-    /* grid-template-columns: auto auto auto; */
-  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -1021,4 +1026,7 @@ svg:hover {
 }
 text {
   margin-top: -90px;
+}
+.bni {
+  margin-top: 4px;
 }
