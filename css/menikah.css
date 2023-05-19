@@ -5,14 +5,20 @@
   justify-content: center;
 }
 
+a {
+  display: none;
+}
 * {
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+}
 html {
   font-family: "Raleway", Tahoma, sans-serif;
   width: 100%;
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 
 .header-wrapper {
@@ -159,6 +165,10 @@ html {
 .main-content .section-darker {
   background-color: #edd2d1;
   padding: 80px 40px;
+}
+.section-darker {
+  background-color: #edd2d1;
+  padding: 80px 40;
 }
 
 .main-content .section-dark.resume {
@@ -361,7 +371,7 @@ html {
   color: #d3918f;
   letter-spacing: 0px;
   padding-bottom: 6px;
-  line-height: 3.7rem;
+  /* line-height: 3.7rem; */
 }
 .nama-orangtua {
   font-size: 1rem;
@@ -547,7 +557,7 @@ html {
     font-size: 16px;
   }
   .nama-lengkap {
-    font-size: 21px;
+    font-size: 20px;
   }
   .nama-orangtua {
     font-size: 13px;
@@ -949,7 +959,7 @@ svg:hover {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #d9bbbb !important;
   margin: auto;
   padding: 20px;
   width: 80%;
@@ -1035,6 +1045,7 @@ text {
 }
 .anak-dari {
   background-image: linear-gradient(to right, white, #d8a9a8, white);
+  margin-top: -50px;
 }
 .anak-dari img {
   border-radius: 15%;
@@ -1043,4 +1054,7 @@ text {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.3rem;
   margin-top: -40px;
+}
+.hadiah {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
