@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prompt Dialog with Button</title>
+    <style>
+      .container {
+        text-align: center;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button onclick="showPrompt()">Show Prompt Dialog</button>
+    </div>
+
+    <script>
+      function showPrompt() {
+        var inputValue = prompt("Please enter your name:", "");
+
+        if (inputValue !== null) {
+          alert("Hello, " + inputValue + "!");
+        } else {
+          alert("You canceled the prompt dialog.");
+        }
+      }
+    </script>
+  </body>
+</html>

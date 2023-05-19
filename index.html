@@ -50,12 +50,52 @@
     <!-- Github Button -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <style>
-   
-      </style>
+      .modal2 {
+        display: none;
+        color: white;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #d8a9a8;
+        background-image: url(image/favicon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30vh;
+        transition-duration: 4s;
+        transition-delay: 2s;
+      }
+
+      .modal2-content2 {
+        background-color: transparent;
+        margin: 0 auto;
+        padding: 0 auto;
+        margin-top: 50%;
+        width: 300px;
+        text-align: center;
+        font-size: larger;
+      }
+      .modal2-content2 p{
+        font-size: 40px;
+      }
+    </style>
   </head>
 
   <body>
-    
+    <div id="myModal" class="modal2">
+      <div class="modal2-content2" data-aos="fade-up" data-aos-easing="linear">
+        <p>The Wedding Of <div class="namalengkap">Jusuf & Tuty</div> </p>
+        <br>
+        <button class="btn btn-warning" id="confirmButton">Open The Invitation Here!</button>
+
+      </div>
+    </div>
+    <!-- <audio autoplay loop>
+        <source src="audio/Ten 2 Five - Love is You.mp3" type="audio/mp3">
+    </audio> -->
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
       <div class="preloader">
@@ -668,6 +708,9 @@
         </a>
       </div>
     </div>
+
+    <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+
     <!-- End Footer -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
@@ -711,7 +754,7 @@
         duration: 800,
       });
     </script>
-    <script>
+    <!-- <script>
       // //   window.addEventListener('load', function() {
       // //     alert('Selamat datang di halaman web kami!');
       // //  });
@@ -754,6 +797,69 @@
           audio.play();
         }
       });
+    </script> -->
+    <!-- <script>
+      function playAudioWithConfirmation(audioFile) {
+      var audio = new Audio(audioFile);
+      
+      // Play the audio
+      audio.play();
+      
+      // Prompt for confirmation
+      var confirmed = confirm("Do you want to play the audio?");
+      
+      if (confirmed) {
+        // Replay the audio
+        audio.play();
+      } else {
+        // Stop the audio
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    }
+
+    // Usage example
+    var audioFile = "audio/Ten 2 Five - Love is You.mp3";
+    playAudioWithConfirmation(audioFile);
+
+    </script> -->
+    <script>
+      function playAudioWithConfirmation(audioFile) {
+        var audio = new Audio(audioFile);
+
+        // Play the audio
+        audio.play();
+
+        // Show the modal dialog
+        var modal = document.getElementById("myModal");
+        modal.style.display = "block";
+
+        // Handle confirmation button click
+        var confirmButton = document.getElementById("confirmButton");
+        confirmButton.onclick = function () {
+          // Hide the modal dialog
+          modal.style.display = "none";
+
+          // Replay the audio
+          audio.currentTime = 0;
+          audio.play();
+        };
+
+        // Handle cancel button click
+        var cancelButton = document.getElementById("cancelButton");
+        cancelButton.onclick = function () {
+          // Hide the modal dialog
+          modal.style.display = "none";
+
+          // Stop the audio
+          audio.pause();
+          audio.currentTime = 0;
+        };
+      }
+
+      // Usage example
+      var audioFile = "audio/Ten 2 Five - Love is You.mp3";
+      playAudioWithConfirmation(audioFile);
     </script>
     
   </body>
