@@ -41,14 +41,14 @@ html {
   background: linear-gradient(rgb(0 0 0 / 28%), #996e6d), #d8a9a8 url(../image/back.JPG) no-repeat;
   /* background-image: url(image/hero.JPG); */
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   color: white;
   box-shadow: inset 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
   font-family: "Raleway", sans-serif;
   max-width: 100% !important;
   height: auto !important;
   min-height: 60vh !important;
-  object-fit: contain;
+  object-fit: contain !important;
   /* background-size: cover;
   min-height: 60vh;
   position: relative;
@@ -60,7 +60,7 @@ html {
   /* background-image: url(https://picsum.photos/id/25/1920/1080); */
   background: linear-gradient(rgb(0 0 0 / 28%), #e2ccd02e), rgb(61 76 90) url(../image/bawah.JPG) no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover !important;
   color: white;
   box-shadow: inset 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
   font-family: "Raleway", sans-serif;
@@ -766,7 +766,7 @@ body.preloader-site {
 }
 
 .foto4 {
-  background-image: url("../image/8.jpg");
+  background-image: url("../image/4.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -774,7 +774,7 @@ body.preloader-site {
 }
 
 .foto5 {
-  background-image: url("../image/9.jpg");
+  background-image: url("../image/5.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -790,7 +790,7 @@ body.preloader-site {
 }
 
 .foto7 {
-  background-image: url("../image/4.jpg");
+  background-image: url("../image/7.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -798,7 +798,7 @@ body.preloader-site {
 }
 
 .foto8 {
-  background-image: url("../image/5.jpg");
+  background-image: url("../image/8.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -806,7 +806,7 @@ body.preloader-site {
 }
 
 .foto9 {
-  background-image: url("../image/7.jpg");
+  background-image: url("../image/bawah.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -890,7 +890,7 @@ body.preloader-site {
 } */
 @media screen and (min-width: 300px) and (max-width: 1100px) {
   .hero {
-    background-size: 50vh;
+    background-size: contain;
     max-width: 100%;
     height: auto;
     background-position-x: center;
