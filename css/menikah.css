@@ -749,22 +749,18 @@ body.preloader-site {
 
 .tile {
   border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 24rem;
 }
 
 .foto1 {
   background-image: url("../image/1.jpg");
-  background-size: cover;
-  /* background-position: center;
-  background-repeat: no-repeat; */
-  min-height: 24rem;
 }
 
 .foto2 {
   background-image: url("../image/2.jpg");
-  background-size: cover;
-  /* background-position: center;
-  background-repeat: no-repeat; */
-  min-height: 24rem;
 }
 
 .foto3 {
@@ -793,34 +789,18 @@ body.preloader-site {
 
 .foto6 {
   background-image: url("../image/6.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 24rem;
 }
 
 .foto7 {
   background-image: url("../image/7.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 24rem;
 }
 
 .foto8 {
   background-image: url("../image/8.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 24rem;
 }
 
 .foto9 {
   background-image: url("../image/bawah.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 24rem;
 }
 
 .title-foto {
@@ -964,14 +944,6 @@ svg:hover {
   padding: 20px;
   width: 80%;
   display: ;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
 }
 
 .close:hover,
