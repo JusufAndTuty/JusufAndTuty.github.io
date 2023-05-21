@@ -44,7 +44,7 @@ html {
 
 .hero {
   /* background-image: url(https://picsum.photos/id/25/1920/1080); */
-  background: linear-gradient(rgb(0 0 0 / 28%), #996e6d), #d8a9a8 url(../image/back.JPG) no-repeat;
+  background: linear-gradient(rgb(0 0 0 / 28%), #996e6d), #d8a9a8 no-repeat;
   /* background-image: url(image/hero.JPG); */
   background-attachment: fixed;
   background-size: contain;
@@ -1057,4 +1057,7 @@ text {
 }
 .hadiah {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.galeri-baru {
+  max-height: 430px;
 }
