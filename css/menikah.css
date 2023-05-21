@@ -72,6 +72,7 @@ html {
   font-family: "Raleway", sans-serif;
   max-width: 100% !important;
   height: auto !important;
+  object-fit: contain !important;
 }
 
 .hero .title {
@@ -879,25 +880,9 @@ body.preloader-site {
   width: 100%;
   float: left;
   position: relative;
-
   top: 50%;
   width: 100%;
 }
-/* @media (max-width: 768px) {
-  .hero {
-    min-height: 30vh;
-  }
-}
-@media (max-width: 358px) {
-  .hero {
-    min-height: 30vh;
-  }
-}
-@media (min-width: 300px) and (max-width: 360px) {
-  .hero {
-    max-height: 30vh;
-  }
-} */
 @media screen and (min-width: 300px) and (max-width: 1100px) {
   .hero {
     background-size: contain;
@@ -908,7 +893,7 @@ body.preloader-site {
     object-fit: contain;
   }
   .hero2 {
-    background-size: 90vh;
+    background-size: contain;
     max-width: 70%;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -927,10 +912,6 @@ body.preloader-site {
     overflow-x: hidden;
   }
 }
-
-/* audio {
-  display: none;
-} */
 #myBtn {
   margin-top: -20px;
 }
